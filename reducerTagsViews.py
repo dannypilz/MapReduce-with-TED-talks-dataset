@@ -37,10 +37,10 @@ for line in sys.stdin:
 		if current_word:
 			# write result to STDOUT
 			print '%s\t\t%s\t\t%s\t\t%s' % (current_word, current_count, current_views, current_viewProportion)
-			current_count = count
-			current_word = word
-			current_views = views
-			current_viewProportion = viewProportion
+		current_count = count
+		current_word = word
+		current_views = views
+		current_viewProportion = viewProportion
 
 # do not forget to output the last word if needed!
 if current_word == word:
